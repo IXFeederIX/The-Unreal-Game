@@ -1,0 +1,369 @@
+/*letras */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    
+/*Introduccion*/
+.js, .html {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+
+.js{
+  width: 100%;
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.butAlso {
+  text-align: center;
+  font-size: 3em;
+  animation-name: Introduction;
+  animation-duration: 3s; 
+  animation-fill-mode: forwards;
+  text-shadow: 5px 2px #000000;
+}
+
+.html {
+  animation-name: slideInRight;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+h1{
+  position: absolute;
+  top:0;
+ text-align: center;
+ font-size: 3em;
+ text-shadow: 5px 2px #000000;
+}
+h2{
+    font-size: 3em;
+    margin: 5px;
+      text-shadow: 5px 2px #000000;
+    position: absolute;
+    top: 10%;
+}
+
+/*KeyFrames de las Animaciones*/
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }50%{
+      transform: translateX(0);
+      opacity: 1;
+  }75%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+   100%{
+      opacity: 0;
+      display: none;
+      animation-fill-mode: forwards;
+  }
+}
+@keyframes slideInLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 1;
+  }
+  25% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+ 50% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  75% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      animation-fill-mode: forwards;
+  }
+}
+/*KeyFrames de las Animaciones*/
+
+/*Introduccion*/
+
+/*Menu Principal*/
+
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding:0;
+  font-family: 'VT323', monospace;
+
+}
+
+
+
+
+
+/*Menu Principal*/
+
+
+
+
+
+.intro{
+  display: none;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+
+}
+
+
+
+.game-menu {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 50px 200px;
+  z-index: 9999;
+}
+
+.menu-boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 15px 255px;
+  box-shadow: 
+    0 0 0 2px #fff,
+    2px 2px 0 2px #fff,
+    4px 4px 0 2px #fff,
+    6px 6px 0 2px #fff,
+    8px 8px 0 2px #fff;
+  font-family: 'VT323', monospace;
+  font-size: 35px;
+}
+
+.menu-boton:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 
+    0 0 0 2px #000,
+    2px 2px 0 2px #fff,
+    4px 4px 0 2px #fff,
+    6px 6px 0 2px #fff,
+    8px 8px 0 2px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-boton:active {
+  background-color: #fff;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+
+.rflx::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.8) 100%);
+  transform: scaleY(-1);
+  z-index: 1;
+  opacity: 0.3;
+}
+
+
+footer {
+display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+  text-align: center;
+  font-size: 2em;
+}
+/*KeyFrames*/
+@keyframes Introduction {
+  0% {
+    opacity: 0; 
+  }
+  25%{
+      opacity: 0;
+  }
+  50% {
+      opacity: 0; 
+  }
+  75%{
+      opacity: 1;
+  }
+  100% {
+    opacity: 0; 
+  }
+}
+@keyframes blink {
+  0% {
+      background-color: #1a1a1a
+  }
+  15% {
+      background-color: transparent;
+  }
+ 30% {
+      background-color: #1a1a1a;
+  }
+  45%{
+      background-color: transparent;
+  }
+  100%{
+      background-color: #1a1a1a;
+  }
+
+}
+
+/*KeyFrames*/
+/*Menu Principal*/
+
+
+/*Configuracion*/
+h3{
+    margin-left: 200px;
+}
+
+.option-box{
+    display: none;
+    justify-content: center;
+    padding-top: 25px;
+    margin-right: 105px;
+    font-size: 20px;
+    
+}
+.option-element {
+    width: 500px;
+    height: 500px;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .option-element:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+/*Configuracion*/
+/*Acerca de*/
+.about{
+    justify-content: center;
+    display:none;
+}
+.game-about{
+    font-size: 3.5em;
+    text-align: center;
+}
+.rotating-square {
+  width: 125px;
+  height: 150px;
+  background-color: darkgrey;
+  animation: rotate 1s linear infinite;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Acerca de*/
+
+/*Misc*/
+.blink{
+    animation: blink 3s forwards;
+}
+.gobackFX{
+    animation: blink2 1s forwards;
+}
+.blink2{
+    animation: blink2 1s forwards;
+}
+.returnbtn .imgback{
+    transition: all 0.3s ease;
+
+  }
+  .imgback{
+    width: 75px;
+    height: 75px;
+    padding: 0px 5px;
+  }
+  .returnbtn:hover .imgback{
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+
+
+
+@keyframes blink2 {
+    0% {
+        background-color: transparent;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+
+
+/*Misc*/
+
+
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+  }
+  
+  @media only screen and (max-width: 1280px) {
+    body {
+      font-size: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 60%;
+    }
+  }
+  
